@@ -31,18 +31,23 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip setuptools wheel
         python3 -m pip install -r requirements.txt
+        # Explicitly install requests as a failsafe
+        python3 -m pip install requests 
 
     # Generate all statistics images
     - name: Generate images
       run: |
         python3 --version
         python3 generate_images.py
+        python3 wakatime_stats.py
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         EXCLUDED: ${{ secrets.EXCLUDED }}
         EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
         EXCLUDE_FORKED_REPOS: true
+        # Inject WakaTime API Key
+        WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
 
     # Commit all changed files to the repository
     - name: Commit to the repo
