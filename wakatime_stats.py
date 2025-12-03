@@ -1,6 +1,7 @@
 import os
 import requests
 import html
+import datetime
 
 # --- 1. Theme Configuration ---
 THEME = {
@@ -145,7 +146,9 @@ def create_svg(title, languages):
         '''
 
     # 4. Assemble Final SVG
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     svg_content = f'''<svg width="{CARD_WIDTH}" height="{CARD_HEIGHT}" viewBox="0 0 {CARD_WIDTH} {CARD_HEIGHT}" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generated at: {timestamp} -->
     <style>
         .header {{ font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: {THEME['title']}; }}
         .lang-name {{ font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: {THEME['text_primary']}; }}
