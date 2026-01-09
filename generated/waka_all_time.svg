@@ -1,5 +1,5 @@
 <svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
-    <!-- Generated at: 2026-01-08 02:24:33 -->
+    <!-- Generated at: 2026-01-09 02:25:51 -->
     <style>
         .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; }
         .lang-name { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
@@ -7,7 +7,7 @@
     </style>
     <rect x="0.5" y="0.5" width="494" height="194" rx="6" fill="#0d1117" stroke="#30363d"/>
     <text x="25" y="35" class="header">WakaTime All-Time</text>
-    <rect x="25" y="60" width="445" height="10" rx="5" fill="#21262d" /><rect x="25" y="60" width="348.5685" height="10" fill="#3D6117" /><rect x="373.5685" y="60" width="75.9615" height="10" fill="#555555" /><rect x="449.53" y="60" width="6.4525" height="10" fill="#3572A5" /><rect x="455.98249999999996" y="60" width="4.272" height="10" fill="#e34c26" /><rect x="460.25449999999995" y="60" width="3.1595" height="10" fill="#083fa1" /><rect x="463.41399999999993" y="60" width="1.2904999999999998" height="10" fill="#f34b7d" /><rect x="464.70449999999994" y="60" width="1.2015" height="10" fill="#8b949e" /><rect x="465.90599999999995" y="60" width="4.0495" height="10" fill="#8b949e" />
+    <rect x="25" y="60" width="445" height="10" rx="5" fill="#21262d" /><rect x="25" y="60" width="346.477" height="10" fill="#3D6117" /><rect x="371.477" y="60" width="75.561" height="10" fill="#555555" /><rect x="447.038" y="60" width="6.4079999999999995" height="10" fill="#3572A5" /><rect x="453.446" y="60" width="4.361" height="10" fill="#e34c26" /><rect x="457.807" y="60" width="3.1595" height="10" fill="#083fa1" /><rect x="460.9665" y="60" width="2.5364999999999998" height="10" fill="#3178c6" /><rect x="463.503" y="60" width="1.246" height="10" fill="#f34b7d" /><rect x="464.74899999999997" y="60" width="5.206500000000001" height="10" fill="#8b949e" />
     
         <g transform="translate(25, 95)">
             <circle cx="6" cy="-5" r="5" fill="#3D6117"/>
@@ -18,7 +18,7 @@
         <g transform="translate(282.5, 95)">
             <circle cx="6" cy="-5" r="5" fill="#555555"/>
             <text x="18" y="0" class="lang-name">C</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">39 hrs 1 min</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">39 hrs 3 mins</text>
         </g>
         
         <g transform="translate(25, 120)">
@@ -30,7 +30,7 @@
         <g transform="translate(282.5, 120)">
             <circle cx="6" cy="-5" r="5" fill="#e34c26"/>
             <text x="18" y="0" class="lang-name">HTML</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">2 hrs 12 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">2 hrs 15 mins</text>
         </g>
         
         <g transform="translate(25, 145)">
@@ -40,21 +40,21 @@
         </g>
         
         <g transform="translate(282.5, 145)">
+            <circle cx="6" cy="-5" r="5" fill="#3178c6"/>
+            <text x="18" y="0" class="lang-name">TypeScript</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">1 hr 19 mins</text>
+        </g>
+        
+        <g transform="translate(25, 170)">
             <circle cx="6" cy="-5" r="5" fill="#f34b7d"/>
             <text x="18" y="0" class="lang-name">C++</text>
             <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">39 mins</text>
         </g>
         
-        <g transform="translate(25, 170)">
-            <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
-            <text x="18" y="0" class="lang-name">Text</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">36 mins</text>
-        </g>
-        
         <g transform="translate(282.5, 170)">
             <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
             <text x="18" y="0" class="lang-name">Other</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">2 hrs 5 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">2 hrs 42 mins</text>
         </g>
         
 </svg>
