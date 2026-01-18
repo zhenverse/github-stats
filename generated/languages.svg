@@ -9,11 +9,16 @@ svg {
 #background {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
-  fill: #0d1117;
-  stroke: #30363d;
-  stroke-width: 0.5px;
+  fill: white;
+  stroke: rgb(225, 228, 232);
+  stroke-width: 1px;
   rx: 6px;
   ry: 6px;
+}
+
+#gh-dark-mode-only:target #background {
+  fill: #0d1117;
+  stroke-width: 0.5px;
 }
 
 foreignObject {
@@ -27,6 +32,11 @@ h2 {
   line-height: 24px;
   font-size: 16px;
   font-weight: 600;
+  color: rgb(36, 41, 46);
+  fill: rgb(36, 41, 46);
+}
+
+#gh-dark-mode-only:target h2 {
   color: #c9d1d9;
   fill: #c9d1d9;
 }
@@ -61,38 +71,56 @@ div.ellipsis {
 }
 
 .octicon {
-  color: #8b949e;
-  fill: #8b949e;
+  fill: rgb(88, 96, 105);
   margin-right: 0.5ch;
   vertical-align: top;
+}
+
+#gh-dark-mode-only:target .octicon {
+  color: #8b949e;
+  fill: #8b949e;
 }
 
 .progress {
   display: flex;
   height: 8px;
   overflow: hidden;
-  background-color: rgba(110, 118, 129, 0.4);
+  background-color: rgb(225, 228, 232);
   border-radius: 6px;
   outline: 1px solid transparent;
   margin-bottom: 1em;
 }
 
+#gh-dark-mode-only:target .progress {
+  background-color: rgba(110, 118, 129, 0.4);
+}
+
 .progress-item {
-  outline: 2px solid #393f47;
+  outline: 2px solid rgb(225, 228, 232);
   border-collapse: collapse;
+}
+
+#gh-dark-mode-only:target .progress-item {
+  outline: 2px solid #393f47;
 }
 
 .lang {
   font-weight: 600;
   margin-right: 4px;
+  color: rgb(36, 41, 46);
+}
+
+#gh-dark-mode-only:target .lang {
   color: #c9d1d9;
 }
 
 .percent {
-  color: #8b949e;
+  color: rgb(88, 96, 105)
 }
 
-
+#gh-dark-mode-only:target .percent {
+  color: #8b949e;
+}
 </style>
 <g>
 <rect x="5" y="5" id="background" />
@@ -104,7 +132,7 @@ div.ellipsis {
 
 <div>
 <span class="progress">
-<span style="background-color: #3D6117;width: 85.093%;" class="progress-item"></span><span style="background-color: #3572A5;width: 9.342%;" class="progress-item"></span><span style="background-color: #e34c26;width: 4.656%;" class="progress-item"></span><span style="background-color: #3178c6;width: 0.382%;" class="progress-item"></span><span style="background-color: #555555;width: 0.267%;" class="progress-item"></span><span style="background-color: #f1e05a;width: 0.187%;" class="progress-item"></span><span style="background-color: #663399;width: 0.072%;" class="progress-item"></span>
+<span style="background-color: #3D6117;width: 85.137%;" class="progress-item"></span><span style="background-color: #3572A5;width: 9.295%;" class="progress-item"></span><span style="background-color: #e34c26;width: 4.658%;" class="progress-item"></span><span style="background-color: #3178c6;width: 0.382%;" class="progress-item"></span><span style="background-color: #555555;width: 0.268%;" class="progress-item"></span><span style="background-color: #f1e05a;width: 0.187%;" class="progress-item"></span><span style="background-color: #663399;width: 0.072%;" class="progress-item"></span>
 </span>
 </div>
 
@@ -116,7 +144,7 @@ div.ellipsis {
 viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
 fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
 <span class="lang">TeX</span>
-<span class="percent">85.09%</span>
+<span class="percent">85.14%</span>
 </li>
 
 
@@ -125,7 +153,7 @@ fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
 viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
 fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
 <span class="lang">Python</span>
-<span class="percent">9.34%</span>
+<span class="percent">9.30%</span>
 </li>
 
 
