@@ -1,13 +1,38 @@
 <svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
-    <!-- Generated at: 2026-01-18 02:34:27 -->
+    <!-- Generated at: 2026-01-18 22:58:23 -->
+    
     <style>
-        .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff; }
-        .lang-name { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
-        .lang-percent { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8b949e; }
+        :root {
+            --bg: #ffffff; /* background */
+            --border: #e1e4e8;
+            --title: #24292e;
+            --text-primary: #24292e;
+            --text-secondary: #586069; /* time, percent */
+            --bar-bg: #ebedf0; /* background of progress bar */
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0d1117;
+                --border: #30363d;
+                --title: #ffffff;
+                --text-primary: #c9d1d9;
+                --text-secondary: #8b949e;
+                --bar-bg: #21262d;
+            }
+        }
+        
+        /* Apply variables to SVG elements */
+        .card-bg { fill: var(--bg); stroke: var(--border); }
+        .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: var(--title); }
+        .lang-name { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: var(--text-primary); }
+        .lang-percent { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: var(--text-secondary); }
+        .bar-bg { fill: var(--bar-bg); }
     </style>
-    <rect x="0.5" y="0.5" width="494" height="194" rx="6" fill="#0d1117" stroke="#30363d"/>
+
+    <rect x="0.5" y="0.5" width="494" height="194" rx="6" class="card-bg"/>
     <text x="25" y="35" class="header">WakaTime All-Time</text>
-    <rect x="25" y="60" width="445" height="10" rx="5" fill="#21262d" /><rect x="25" y="60" width="333.661" height="10" fill="#3D6117" /><rect x="358.661" y="60" width="72.71300000000001" height="10" fill="#555555" /><rect x="431.374" y="60" width="8.366" height="10" fill="#3178c6" /><rect x="439.74" y="60" width="6.2745" height="10" fill="#083fa1" /><rect x="446.0145" y="60" width="6.140999999999999" height="10" fill="#3572A5" /><rect x="452.1555" y="60" width="6.140999999999999" height="10" fill="#e34c26" /><rect x="458.29650000000004" y="60" width="3.2484999999999995" height="10" fill="#f1e05a" /><rect x="461.545" y="60" width="8.499500000000001" height="10" fill="#8b949e" />
+    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="333.661" height="10" fill="#3D6117" /><rect x="358.661" y="60" width="72.71300000000001" height="10" fill="#555555" /><rect x="431.374" y="60" width="8.366" height="10" fill="#3178c6" /><rect x="439.74" y="60" width="6.2745" height="10" fill="#083fa1" /><rect x="446.0145" y="60" width="6.140999999999999" height="10" fill="#3572A5" /><rect x="452.1555" y="60" width="6.140999999999999" height="10" fill="#e34c26" /><rect x="458.29650000000004" y="60" width="3.2484999999999995" height="10" fill="#f1e05a" /><rect x="461.545" y="60" width="8.499500000000001" height="10" fill="#8b949e" />
     
         <g transform="translate(25, 95)">
             <circle cx="6" cy="-5" r="5" fill="#3D6117"/>

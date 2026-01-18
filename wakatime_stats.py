@@ -4,14 +4,45 @@ import html
 import datetime
 
 # --- 1. Theme Configuration ---
-THEME = {
-    "bg": "#0d1117",        # Background color
-    "border": "#30363d",    # Border color
-    "title": "#ffffff",     # Title color (White)
-    "text_primary": "#c9d1d9",   # Primary text color
-    "text_secondary": "#8b949e", # Secondary text color (time/percent)
-    "bar_bg": "#21262d",    # Progress bar background color
-}
+# THEME = {
+#     "bg": "#0d1117",        # Background color
+#     "border": "#30363d",    # Border color
+#     "title": "#ffffff",     # Title color (White)
+#     "text_primary": "#c9d1d9",   # Primary text color
+#     "text_secondary": "#8b949e", # Secondary text color (time/percent)
+#     "bar_bg": "#21262d",    # Progress bar background color
+# }
+
+CSS_STYLES = '''
+    <style>
+        :root {
+            --bg: #ffffff; /* background */
+            --border: #e1e4e8;
+            --title: #24292e;
+            --text-primary: #24292e;
+            --text-secondary: #586069; /* time, percent */
+            --bar-bg: #ebedf0; /* background of progress bar */
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0d1117;
+                --border: #30363d;
+                --title: #ffffff;
+                --text-primary: #c9d1d9;
+                --text-secondary: #8b949e;
+                --bar-bg: #21262d;
+            }
+        }
+        
+        /* Apply variables to SVG elements */
+        .card-bg { fill: var(--bg); stroke: var(--border); }
+        .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: var(--title); }
+        .lang-name { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: var(--text-primary); }
+        .lang-percent { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: var(--text-secondary); }
+        .bar-bg { fill: var(--bar-bg); }
+    </style>
+'''
 
 # --- 2. Language Color Mapping ---
 LANGUAGE_COLORS = {
@@ -102,7 +133,7 @@ def create_svg(title, languages):
     current_x = bar_start_x
     
     # 1. Draw Progress Bar Background
-    bar_svg += f'<rect x="{bar_start_x}" y="60" width="{bar_width}" height="10" rx="5" fill="{THEME["bar_bg"]}" />'
+    bar_svg += f'<rect x="{PADDING}" y="60" width="{bar_width}" height="10" rx="5" class="bar-bg" />'
     
     # 2. Draw Colored Segments
     for lang in final_langs:
@@ -149,12 +180,8 @@ def create_svg(title, languages):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     svg_content = f'''<svg width="{CARD_WIDTH}" height="{CARD_HEIGHT}" viewBox="0 0 {CARD_WIDTH} {CARD_HEIGHT}" xmlns="http://www.w3.org/2000/svg">
     <!-- Generated at: {timestamp} -->
-    <style>
-        .header {{ font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: {THEME['title']}; }}
-        .lang-name {{ font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: {THEME['text_primary']}; }}
-        .lang-percent {{ font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: {THEME['text_secondary']}; }}
-    </style>
-    <rect x="0.5" y="0.5" width="{CARD_WIDTH-1}" height="{CARD_HEIGHT-1}" rx="6" fill="{THEME['bg']}" stroke="{THEME['border']}"/>
+    {CSS_STYLES}
+    <rect x="0.5" y="0.5" width="{CARD_WIDTH-1}" height="{CARD_HEIGHT-1}" rx="6" class="card-bg"/>
     <text x="{PADDING}" y="35" class="header">{title}</text>
     {bar_svg}
     {list_svg}
