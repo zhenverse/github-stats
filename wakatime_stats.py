@@ -4,15 +4,6 @@ import html
 import datetime
 
 # --- 1. Theme Configuration ---
-# THEME = {
-#     "bg": "#0d1117",        # Background color
-#     "border": "#30363d",    # Border color
-#     "title": "#ffffff",     # Title color (White)
-#     "text_primary": "#c9d1d9",   # Primary text color
-#     "text_secondary": "#8b949e", # Secondary text color (time/percent)
-#     "bar_bg": "#21262d",    # Progress bar background color
-# }
-
 CSS_STYLES = '''
     <style>
         :root {
