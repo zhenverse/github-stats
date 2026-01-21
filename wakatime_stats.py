@@ -9,9 +9,9 @@ CSS_STYLES = '''
         :root {
             --bg: #ffffff; /* background */
             --border: #e1e4e8;
-            --title: #24292e;
-            --text-primary: #24292e;
-            --text-secondary: #586069; /* time, percent */
+            --title: rgb(36, 41, 46);
+            --text-primary: rgb(36, 41, 46);
+            --text-secondary: rgb(88, 96, 105); /* time, percent */
             --bar-bg: #ebedf0; /* background of progress bar */
         }
         
@@ -19,7 +19,7 @@ CSS_STYLES = '''
             :root {
                 --bg: #0d1117;
                 --border: #30363d;
-                --title: #ffffff;
+                --title: #c9d1d9;
                 --text-primary: #c9d1d9;
                 --text-secondary: #8b949e;
                 --bar-bg: #21262d;
@@ -27,11 +27,28 @@ CSS_STYLES = '''
         }
         
         /* Apply variables to SVG elements */
-        .card-bg { fill: var(--bg); stroke: var(--border); }
-        .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: var(--title); }
-        .lang-name { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: var(--text-primary); }
-        .lang-percent { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: var(--text-secondary); }
-        .bar-bg { fill: var(--bar-bg); }
+        .card-bg { 
+            fill: var(--bg);
+            stroke: var(--border); 
+        }
+        .header { 
+            font: 600 16px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji; 
+            color: var(--title);
+            fill: var(--title); 
+        }
+        .lang-name { 
+            font: 600 13px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji; 
+            color: var(--text-primary);
+            fill: var(--text-primary); 
+        }
+        .lang-percent { 
+            font: 400 12px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji; 
+            color: var(--text-secondary);
+            fill: var(--text-secondary); 
+        }
+        .bar-bg { 
+            fill: var(--bar-bg); 
+        }
     </style>
 '''
 
