@@ -1,5 +1,5 @@
 <svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
-    <!-- Generated at: 2026-02-25 02:56:49 -->
+    <!-- Generated at: 2026-02-26 02:54:44 -->
     
     <style>
         :root {
@@ -49,12 +49,12 @@
 
     <rect x="0.5" y="0.5" width="494" height="194" rx="6" class="card-bg"/>
     <text x="25" y="35" class="header">WakaTime Last 7 Days</text>
-    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="360.45" height="10" fill="#3D6117" /><rect x="385.45" y="60" width="40.406" height="10" fill="#8b949e" /><rect x="425.856" y="60" width="20.737000000000002" height="10" fill="#292929" /><rect x="446.593" y="60" width="18.334" height="10" fill="#8b949e" /><rect x="464.927" y="60" width="2.8480000000000003" height="10" fill="#083fa1" /><rect x="467.77500000000003" y="60" width="2.225" height="10" fill="#8b949e" />
+    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="363.83200000000005" height="10" fill="#3D6117" /><rect x="388.83200000000005" y="60" width="38.358999999999995" height="10" fill="#8b949e" /><rect x="427.19100000000003" y="60" width="19.668999999999997" height="10" fill="#292929" /><rect x="446.86" y="60" width="17.3995" height="10" fill="#8b949e" /><rect x="464.2595" y="60" width="2.9815000000000005" height="10" fill="#8b949e" /><rect x="467.241" y="60" width="2.7144999999999997" height="10" fill="#083fa1" />
     
         <g transform="translate(25, 95)">
             <circle cx="6" cy="-5" r="5" fill="#3D6117"/>
             <text x="18" y="0" class="lang-name">TeX</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">10 hrs 21 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">11 hrs</text>
         </g>
         
         <g transform="translate(282.5, 95)">
@@ -76,15 +76,15 @@
         </g>
         
         <g transform="translate(25, 145)">
-            <circle cx="6" cy="-5" r="5" fill="#083fa1"/>
-            <text x="18" y="0" class="lang-name">Markdown</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">4 mins</text>
+            <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
+            <text x="18" y="0" class="lang-name">Other</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">5 mins</text>
         </g>
         
         <g transform="translate(282.5, 145)">
-            <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
-            <text x="18" y="0" class="lang-name">Other</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">3 mins</text>
+            <circle cx="6" cy="-5" r="5" fill="#083fa1"/>
+            <text x="18" y="0" class="lang-name">Markdown</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">4 mins</text>
         </g>
         
 </svg>
