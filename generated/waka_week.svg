@@ -1,5 +1,5 @@
 <svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
-    <!-- Generated at: 2026-03-08 02:54:44 -->
+    <!-- Generated at: 2026-03-09 02:55:47 -->
     
     <style>
         :root {
@@ -49,18 +49,18 @@
 
     <rect x="0.5" y="0.5" width="494" height="194" rx="6" class="card-bg"/>
     <text x="25" y="35" class="header">WakaTime Last 7 Days</text>
-    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="243.05899999999997" height="10" fill="#3D6117" /><rect x="268.05899999999997" y="60" width="198.0695" height="10" fill="#555555" /><rect x="466.1285" y="60" width="1.5130000000000001" height="10" fill="#083fa1" /><rect x="467.64149999999995" y="60" width="1.5130000000000001" height="10" fill="#8b949e" /><rect x="469.1544999999999" y="60" width="0.7120000000000001" height="10" fill="#8b949e" />
+    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="259.61300000000006" height="10" fill="#555555" /><rect x="284.61300000000006" y="60" width="182.80599999999998" height="10" fill="#3D6117" /><rect x="467.41900000000004" y="60" width="1.7355" height="10" fill="#083fa1" /><rect x="469.15450000000004" y="60" width="0.8009999999999999" height="10" fill="#8b949e" />
     
         <g transform="translate(25, 95)">
-            <circle cx="6" cy="-5" r="5" fill="#3D6117"/>
-            <text x="18" y="0" class="lang-name">TeX</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">18 hrs 4 mins</text>
+            <circle cx="6" cy="-5" r="5" fill="#555555"/>
+            <text x="18" y="0" class="lang-name">C</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">16 hrs 52 mins</text>
         </g>
         
         <g transform="translate(282.5, 95)">
-            <circle cx="6" cy="-5" r="5" fill="#555555"/>
-            <text x="18" y="0" class="lang-name">C</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">14 hrs 44 mins</text>
+            <circle cx="6" cy="-5" r="5" fill="#3D6117"/>
+            <text x="18" y="0" class="lang-name">TeX</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">11 hrs 52 mins</text>
         </g>
         
         <g transform="translate(25, 120)">
@@ -71,31 +71,25 @@
         
         <g transform="translate(282.5, 120)">
             <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
-            <text x="18" y="0" class="lang-name">BibTeX</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">6 mins</text>
-        </g>
-        
-        <g transform="translate(25, 145)">
-            <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
             <text x="18" y="0" class="lang-name">Git Config</text>
             <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">3 mins</text>
         </g>
         
-        <g transform="translate(282.5, 145)">
-            <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
-            <text x="18" y="0" class="lang-name">Text</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">0 secs</text>
-        </g>
-        
-        <g transform="translate(25, 170)">
+        <g transform="translate(25, 145)">
             <circle cx="6" cy="-5" r="5" fill="#292929"/>
             <text x="18" y="0" class="lang-name">JSON</text>
             <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">0 secs</text>
         </g>
         
-        <g transform="translate(282.5, 170)">
+        <g transform="translate(282.5, 145)">
             <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
             <text x="18" y="0" class="lang-name">Other</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">0 secs</text>
+        </g>
+        
+        <g transform="translate(25, 170)">
+            <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
+            <text x="18" y="0" class="lang-name">Text</text>
             <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">0 secs</text>
         </g>
         
