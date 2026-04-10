@@ -1,5 +1,5 @@
 <svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
-    <!-- Generated at: 2026-04-09 03:23:07 -->
+    <!-- Generated at: 2026-04-10 03:44:32 -->
     
     <style>
         :root {
@@ -49,24 +49,24 @@
 
     <rect x="0.5" y="0.5" width="494" height="194" rx="6" class="card-bg"/>
     <text x="25" y="35" class="header">WakaTime Last 7 Days</text>
-    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="238.7425" height="10" fill="#3D6117" /><rect x="263.7425" y="60" width="146.583" height="10" fill="#555555" /><rect x="410.32550000000003" y="60" width="59.674499999999995" height="10" fill="#083fa1" />
+    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="315.772" height="10" fill="#3D6117" /><rect x="340.772" y="60" width="76.362" height="10" fill="#083fa1" /><rect x="417.134" y="60" width="52.86600000000001" height="10" fill="#555555" />
     
         <g transform="translate(25, 95)">
             <circle cx="6" cy="-5" r="5" fill="#3D6117"/>
             <text x="18" y="0" class="lang-name">TeX</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">10 hrs 18 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">10 hrs 27 mins</text>
         </g>
         
         <g transform="translate(282.5, 95)">
-            <circle cx="6" cy="-5" r="5" fill="#555555"/>
-            <text x="18" y="0" class="lang-name">C</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">6 hrs 19 mins</text>
+            <circle cx="6" cy="-5" r="5" fill="#083fa1"/>
+            <text x="18" y="0" class="lang-name">Markdown</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">2 hrs 31 mins</text>
         </g>
         
         <g transform="translate(25, 120)">
-            <circle cx="6" cy="-5" r="5" fill="#083fa1"/>
-            <text x="18" y="0" class="lang-name">Markdown</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">2 hrs 34 mins</text>
+            <circle cx="6" cy="-5" r="5" fill="#555555"/>
+            <text x="18" y="0" class="lang-name">C</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">1 hr 45 mins</text>
         </g>
         
 </svg>
