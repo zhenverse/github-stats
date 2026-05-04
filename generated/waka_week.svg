@@ -1,5 +1,5 @@
 <svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
-    <!-- Generated at: 2026-05-03 04:38:35 -->
+    <!-- Generated at: 2026-05-04 04:36:11 -->
     
     <style>
         :root {
@@ -49,48 +49,48 @@
 
     <rect x="0.5" y="0.5" width="494" height="194" rx="6" class="card-bg"/>
     <text x="25" y="35" class="header">WakaTime Last 7 Days</text>
-    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="349.45849999999996" height="10" fill="#3D6117" /><rect x="374.45849999999996" y="60" width="83.838" height="10" fill="#083fa1" /><rect x="458.2964999999999" y="60" width="4.2275" height="10" fill="#8b949e" /><rect x="462.52399999999994" y="60" width="3.4265000000000003" height="10" fill="#e34c26" /><rect x="465.9504999999999" y="60" width="1.9135" height="10" fill="#8b949e" /><rect x="467.8639999999999" y="60" width="1.9135" height="10" fill="#f1e05a" />
+    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="330.635" height="10" fill="#3D6117" /><rect x="355.635" y="60" width="65.1035" height="10" fill="#083fa1" /><rect x="420.7385" y="60" width="38.8485" height="10" fill="#555555" /><rect x="459.587" y="60" width="3.7825" height="10" fill="#8b949e" /><rect x="463.3695" y="60" width="3.0704999999999996" height="10" fill="#e34c26" /><rect x="466.44" y="60" width="1.7355" height="10" fill="#8b949e" /><rect x="468.1755" y="60" width="1.6909999999999998" height="10" fill="#f1e05a" />
     
         <g transform="translate(25, 95)">
             <circle cx="6" cy="-5" r="5" fill="#3D6117"/>
             <text x="18" y="0" class="lang-name">TeX</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">21 hrs 47 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">23 hrs 4 mins</text>
         </g>
         
         <g transform="translate(282.5, 95)">
             <circle cx="6" cy="-5" r="5" fill="#083fa1"/>
             <text x="18" y="0" class="lang-name">Markdown</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">5 hrs 13 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">4 hrs 32 mins</text>
         </g>
         
         <g transform="translate(25, 120)">
+            <circle cx="6" cy="-5" r="5" fill="#555555"/>
+            <text x="18" y="0" class="lang-name">C</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">2 hrs 42 mins</text>
+        </g>
+        
+        <g transform="translate(282.5, 120)">
             <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
             <text x="18" y="0" class="lang-name">BibTeX</text>
             <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">15 mins</text>
         </g>
         
-        <g transform="translate(282.5, 120)">
+        <g transform="translate(25, 145)">
             <circle cx="6" cy="-5" r="5" fill="#e34c26"/>
             <text x="18" y="0" class="lang-name">HTML</text>
             <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">12 mins</text>
         </g>
         
-        <g transform="translate(25, 145)">
+        <g transform="translate(282.5, 145)">
             <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
             <text x="18" y="0" class="lang-name">Git Config</text>
             <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">7 mins</text>
         </g>
         
-        <g transform="translate(282.5, 145)">
+        <g transform="translate(25, 170)">
             <circle cx="6" cy="-5" r="5" fill="#f1e05a"/>
             <text x="18" y="0" class="lang-name">JavaScript</text>
             <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">7 mins</text>
-        </g>
-        
-        <g transform="translate(25, 170)">
-            <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
-            <text x="18" y="0" class="lang-name">V</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">0 secs</text>
         </g>
         
         <g transform="translate(282.5, 170)">

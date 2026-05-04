@@ -1,5 +1,5 @@
 <svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
-    <!-- Generated at: 2026-05-03 04:38:35 -->
+    <!-- Generated at: 2026-05-04 04:36:11 -->
     
     <style>
         :root {
@@ -49,18 +49,18 @@
 
     <rect x="0.5" y="0.5" width="494" height="194" rx="6" class="card-bg"/>
     <text x="25" y="35" class="header">WakaTime All-Time</text>
-    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="314.793" height="10" fill="#3D6117" /><rect x="339.793" y="60" width="88.822" height="10" fill="#555555" /><rect x="428.615" y="60" width="12.46" height="10" fill="#083fa1" /><rect x="441.075" y="60" width="6.096500000000001" height="10" fill="#e34c26" /><rect x="447.1715" y="60" width="5.251" height="10" fill="#3178c6" /><rect x="452.42249999999996" y="60" width="4.094" height="10" fill="#3572A5" /><rect x="456.51649999999995" y="60" width="2.6255" height="10" fill="#f1e05a" /><rect x="459.14199999999994" y="60" width="10.857999999999997" height="10" fill="#8b949e" />
+    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="314.0365" height="10" fill="#3D6117" /><rect x="339.0365" y="60" width="90.0235" height="10" fill="#555555" /><rect x="429.06" y="60" width="12.326500000000001" height="10" fill="#083fa1" /><rect x="441.3865" y="60" width="6.0075" height="10" fill="#e34c26" /><rect x="447.394" y="60" width="5.2065" height="10" fill="#3178c6" /><rect x="452.6005" y="60" width="4.0495" height="10" fill="#3572A5" /><rect x="456.65000000000003" y="60" width="2.5809999999999995" height="10" fill="#f1e05a" /><rect x="459.23100000000005" y="60" width="10.679999999999998" height="10" fill="#8b949e" />
     
         <g transform="translate(25, 95)">
             <circle cx="6" cy="-5" r="5" fill="#3D6117"/>
             <text x="18" y="0" class="lang-name">TeX</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">385 hrs 58 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">389 hrs 13 mins</text>
         </g>
         
         <g transform="translate(282.5, 95)">
             <circle cx="6" cy="-5" r="5" fill="#555555"/>
             <text x="18" y="0" class="lang-name">C</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">108 hrs 53 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">111 hrs 36 mins</text>
         </g>
         
         <g transform="translate(25, 120)">
