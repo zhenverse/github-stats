@@ -1,5 +1,5 @@
 <svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
-    <!-- Generated at: 2026-06-06 04:15:17 -->
+    <!-- Generated at: 2026-06-07 04:51:18 -->
     
     <style>
         :root {
@@ -49,18 +49,18 @@
 
     <rect x="0.5" y="0.5" width="494" height="194" rx="6" class="card-bg"/>
     <text x="25" y="35" class="header">WakaTime Last 7 Days</text>
-    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="391.3775" height="10" fill="#3D6117" /><rect x="416.3775" y="60" width="53.577999999999996" height="10" fill="#555555" />
+    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="366.50199999999995" height="10" fill="#3D6117" /><rect x="391.50199999999995" y="60" width="78.498" height="10" fill="#555555" />
     
         <g transform="translate(25, 95)">
             <circle cx="6" cy="-5" r="5" fill="#3D6117"/>
             <text x="18" y="0" class="lang-name">TeX</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">21 hrs 27 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">12 hrs 5 mins</text>
         </g>
         
         <g transform="translate(282.5, 95)">
             <circle cx="6" cy="-5" r="5" fill="#555555"/>
             <text x="18" y="0" class="lang-name">C</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">2 hrs 56 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">2 hrs 35 mins</text>
         </g>
         
         <g transform="translate(25, 120)">
