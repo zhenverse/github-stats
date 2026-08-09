@@ -7,12 +7,12 @@ import datetime
 CSS_STYLES = '''
     <style>
         :root {
-            --bg: #ffffff; /* background */
+            --bg: #ffffff;
             --border: #e1e4e8;
             --title: rgb(36, 41, 46);
             --text-primary: rgb(36, 41, 46);
-            --text-secondary: rgb(88, 96, 105); /* time, percent */
-            --bar-bg: #ebedf0; /* background of progress bar */
+            --text-secondary: rgb(88, 96, 105);
+            --bar-bg: #ebedf0;
         }
         
         @media (prefers-color-scheme: dark) {
@@ -26,60 +26,52 @@ CSS_STYLES = '''
             }
         }
         
-        /* Apply variables to SVG elements */
-        .card-bg { 
-            fill: var(--bg);
-            stroke: var(--border); 
-        }
-        .header { 
-            font: 600 16px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji; 
-            color: var(--title);
-            fill: var(--title); 
-        }
-        .lang-name { 
-            font: 600 13px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji; 
-            color: var(--text-primary);
-            fill: var(--text-primary); 
-        }
-        .lang-percent { 
-            font: 400 12px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji; 
-            color: var(--text-secondary);
-            fill: var(--text-secondary); 
-        }
-        .bar-bg { 
-            fill: var(--bar-bg); 
-        }
+        .card-bg { fill: var(--bg); stroke: var(--border); }
+        .header { font: 600 16px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; color: var(--title); fill: var(--title); }
+        .lang-name { font: 600 13px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; color: var(--text-primary); fill: var(--text-primary); }
+        .lang-percent { font: 400 12px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; color: var(--text-secondary); fill: var(--text-secondary); }
+        .bar-bg { fill: var(--bar-bg); }
     </style>
 '''
 
-# --- 2. Language Color Mapping ---
-LANGUAGE_COLORS = {
-    "TeX": "#3D6117",
-    "Python": "#3572A5",
-    "C": "#555555",
-    "C++": "#f34b7d",
-    "Markdown": "#083fa1",
-    "HTML": "#e34c26",
-    "JavaScript": "#f1e05a",
-    "TypeScript": "#3178c6",
-    "Bash": "#89e051",
-    "Shell": "#89e051",
-    "JSON": "#292929",
-    "YAML": "#cb171e",
-    "CSS": "#563d7c",
-    "Java": "#b07219",
-    "Go": "#00ADD8",
-    "Rust": "#dea584",
-    "Other": "#8b949e"
-}
-
-# --- 3. Basic Settings ---
+# --- 2. Basic Settings ---
 CARD_WIDTH = 495
 CARD_HEIGHT = 195
 PADDING = 25
 MAX_ITEMS = 8  # Max 8 items (4 rows)
 OUTPUT_DIR = "generated"
 WAKATIME_API_KEY = os.environ.get("WAKATIME_API_KEY")
+
+GITHUB_COLORS = {}
+
+def fetch_github_colors():
+    global GITHUB_COLORS
+    print("Fetching official GitHub colors...")
+    try:
+        r = requests.get("https://raw.githubusercontent.com/ozh/github-colors/master/colors.json", timeout=10)
+        if r.status_code == 200:
+            GITHUB_COLORS = r.json()
+            print("✅ GitHub colors loaded successfully.")
+        else:
+            print(f"⚠️ Failed to fetch colors: HTTP {r.status_code}. Will use fallback colors.")
+    except Exception as e:
+        print(f"⚠️ Exception fetching colors: {e}. Will use fallback colors.")
+
+def get_color(lang_name):
+    mapping = {
+        "Vue.js": "Vue",
+        "React": "JavaScript",
+        "C++": "C++",
+        "TeX": "TeX"
+    }
+    lookup_name = mapping.get(lang_name, lang_name)
+
+    if lookup_name in GITHUB_COLORS and "color" in GITHUB_COLORS[lookup_name]:
+        color = GITHUB_COLORS[lookup_name]["color"]
+        if color: 
+            return color
+            
+    return "#8b949e"
 
 def fetch_wakatime(endpoint):
     """Fetch data from WakaTime API."""
@@ -89,9 +81,9 @@ def fetch_wakatime(endpoint):
         
     try:
         url = f"https://wakatime.com/api/v1/users/current/{endpoint}?api_key={WAKATIME_API_KEY}"
-        r = requests.get(url)
+        r = requests.get(url, timeout=10)
         if r.status_code != 200:
-            print(f"Error fetching {endpoint}: {r.status_code}")
+            print(f"Error fetching {endpoint}: HTTP {r.status_code}")
             return None
         return r.json()['data']
     except Exception as e:
@@ -109,22 +101,15 @@ def format_duration(seconds):
 
 def create_svg(title, languages):
     """Generate SVG image."""
-    
-    # --- Data Grouping Logic ---
     final_langs = []
     
     if languages:
-        # If languages exceed the limit, group the rest into "Other"
         if len(languages) > MAX_ITEMS:
-            # Take the top N-1 languages
             final_langs = languages[:MAX_ITEMS-1]
-            
-            # Calculate stats for the rest
             other_langs = languages[MAX_ITEMS-1:]
             other_total_seconds = sum(l.get('total_seconds', 0) for l in other_langs)
             other_percent = sum(l.get('percent', 0) for l in other_langs)
             
-            # Create "Other" entry
             final_langs.append({
                 'name': 'Other',
                 'percent': other_percent,
@@ -134,29 +119,23 @@ def create_svg(title, languages):
         else:
             final_langs = languages
 
-    # --- Start Drawing SVG ---
     bar_svg = ""
     bar_width = CARD_WIDTH - (PADDING * 2)
-    bar_start_x = PADDING
-    current_x = bar_start_x
+    current_x = PADDING
     
-    # 1. Draw Progress Bar Background
+    # Draw Background Bar
     bar_svg += f'<rect x="{PADDING}" y="60" width="{bar_width}" height="10" rx="5" class="bar-bg" />'
     
-    # 2. Draw Colored Segments
+    # Draw Colored Segments
     for lang in final_langs:
-        # Skip very small segments to avoid rendering issues, unless it needs to be counted
         if lang['percent'] < 0.1: continue 
         
-        lang_name = lang['name']
-        color = LANGUAGE_COLORS.get(lang_name, LANGUAGE_COLORS["Other"])
-        
+        color = get_color(lang['name'])
         width = (bar_width * lang['percent']) / 100
-        
         bar_svg += f'<rect x="{current_x}" y="60" width="{width}" height="10" fill="{color}" />'
         current_x += width
 
-    # 3. Draw Language List
+    # Draw Language List
     list_svg = ""
     col_1_x = PADDING
     col_2_x = PADDING + (CARD_WIDTH / 2) + 10 
@@ -164,16 +143,10 @@ def create_svg(title, languages):
     line_height = 25
     
     for i, lang in enumerate(final_langs):
-        lang_name = lang['name']
-        color = LANGUAGE_COLORS.get(lang_name, LANGUAGE_COLORS["Other"])
-        
-        # Determine column (Left or Right)
+        color = get_color(lang['name'])
         x = col_1_x if i % 2 == 0 else col_2_x
         y = start_y + (i // 2) * line_height
-        
-        display_name = html.escape(lang_name)
-        
-        # Use 'text' from API or fallback to percentage
+        display_name = html.escape(lang['name'])
         time_text = lang.get('text', f"{lang['percent']}%")
         
         list_svg += f'''
@@ -184,7 +157,6 @@ def create_svg(title, languages):
         </g>
         '''
 
-    # 4. Assemble Final SVG
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     svg_content = f'''<svg width="{CARD_WIDTH}" height="{CARD_HEIGHT}" viewBox="0 0 {CARD_WIDTH} {CARD_HEIGHT}" xmlns="http://www.w3.org/2000/svg">
     <!-- Generated at: {timestamp} -->
@@ -204,8 +176,9 @@ def main():
             pass
 
     print("--- Starting WakaTime Stats Generation ---")
+    
+    fetch_github_colors()
 
-    # 1. All Time
     all_time_data = fetch_wakatime("stats/all_time")
     if all_time_data and 'languages' in all_time_data:
         svg = create_svg("WakaTime All-Time", all_time_data['languages'])
@@ -213,7 +186,6 @@ def main():
             f.write(svg)
         print("✅ Generated waka_all_time.svg")
 
-    # 2. Last 7 Days
     week_data = fetch_wakatime("stats/last_7_days")
     if week_data and 'languages' in week_data:
         svg = create_svg("WakaTime Last 7 Days", week_data['languages'])
