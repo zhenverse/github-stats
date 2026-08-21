@@ -1,5 +1,5 @@
 <svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
-    <!-- Generated at: 2026-08-20 01:45:28 -->
+    <!-- Generated at: 2026-08-21 01:50:50 -->
     
     <style>
         :root {
@@ -31,54 +31,54 @@
 
     <rect x="0.5" y="0.5" width="494" height="194" rx="6" class="card-bg"/>
     <text x="25" y="35" class="header">WakaTime Last 7 Days</text>
-    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="246.57449999999997" height="10" fill="#3D6117" /><rect x="271.57449999999994" y="60" width="145.60399999999998" height="10" fill="#178600" /><rect x="417.17849999999993" y="60" width="28.391" height="10" fill="#e34c26" /><rect x="445.56949999999995" y="60" width="13.35" height="10" fill="#8b949e" /><rect x="458.91949999999997" y="60" width="7.832000000000001" height="10" fill="#083fa1" /><rect x="466.75149999999996" y="60" width="1.6465" height="10" fill="#F44D27" /><rect x="468.39799999999997" y="60" width="0.9790000000000001" height="10" fill="#555555" /><rect x="469.37699999999995" y="60" width="0.6675" height="10" fill="#8b949e" />
+    <rect x="25" y="60" width="445" height="10" rx="5" class="bar-bg" /><rect x="25" y="60" width="274.476" height="10" fill="#3D6117" /><rect x="299.476" y="60" width="63.635" height="10" fill="#178600" /><rect x="363.111" y="60" width="54.0675" height="10" fill="#083fa1" /><rect x="417.1785" y="60" width="24.1635" height="10" fill="#cb171e" /><rect x="441.342" y="60" width="17.711" height="10" fill="#8b949e" /><rect x="459.053" y="60" width="4.5835" height="10" fill="#e34c26" /><rect x="463.6365" y="60" width="3.293" height="10" fill="#F44D27" /><rect x="466.9295" y="60" width="3.1150000000000007" height="10" fill="#8b949e" />
     
         <g transform="translate(25, 95)">
             <circle cx="6" cy="-5" r="5" fill="#3D6117"/>
             <text x="18" y="0" class="lang-name">TeX</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">5 hrs 32 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">4 hrs 39 mins</text>
         </g>
         
         <g transform="translate(282.5, 95)">
             <circle cx="6" cy="-5" r="5" fill="#178600"/>
             <text x="18" y="0" class="lang-name">C#</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">3 hrs 16 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">1 hr 4 mins</text>
         </g>
         
         <g transform="translate(25, 120)">
-            <circle cx="6" cy="-5" r="5" fill="#e34c26"/>
-            <text x="18" y="0" class="lang-name">HTML</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">38 mins</text>
+            <circle cx="6" cy="-5" r="5" fill="#083fa1"/>
+            <text x="18" y="0" class="lang-name">Markdown</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">55 mins</text>
         </g>
         
         <g transform="translate(282.5, 120)">
+            <circle cx="6" cy="-5" r="5" fill="#cb171e"/>
+            <text x="18" y="0" class="lang-name">YAML</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">24 mins</text>
+        </g>
+        
+        <g transform="translate(25, 145)">
             <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
             <text x="18" y="0" class="lang-name">Text</text>
             <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">17 mins</text>
         </g>
         
-        <g transform="translate(25, 145)">
-            <circle cx="6" cy="-5" r="5" fill="#083fa1"/>
-            <text x="18" y="0" class="lang-name">Markdown</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">10 mins</text>
-        </g>
-        
         <g transform="translate(282.5, 145)">
-            <circle cx="6" cy="-5" r="5" fill="#F44D27"/>
-            <text x="18" y="0" class="lang-name">Git Config</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">2 mins</text>
+            <circle cx="6" cy="-5" r="5" fill="#e34c26"/>
+            <text x="18" y="0" class="lang-name">HTML</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">4 mins</text>
         </g>
         
         <g transform="translate(25, 170)">
-            <circle cx="6" cy="-5" r="5" fill="#555555"/>
-            <text x="18" y="0" class="lang-name">C</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">1 min</text>
+            <circle cx="6" cy="-5" r="5" fill="#F44D27"/>
+            <text x="18" y="0" class="lang-name">Git Config</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">3 mins</text>
         </g>
         
         <g transform="translate(282.5, 170)">
             <circle cx="6" cy="-5" r="5" fill="#8b949e"/>
             <text x="18" y="0" class="lang-name">Other</text>
-            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">0 mins</text>
+            <text x="18" y="0" dx="180" class="lang-percent" text-anchor="end">3 mins</text>
         </g>
         
 </svg>
