@@ -58,9 +58,6 @@ def fetch_github_colors():
         print(f"⚠️ Exception fetching colors: {e}. Will use fallback colors.")
 
 def get_color(lang_name):
-    if lang_name == "C#":
-        return "#178600"
-
     mapping = {
         "Vue.js": "Vue",
         "React": "JavaScript",
